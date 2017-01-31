@@ -14,6 +14,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -33,14 +34,30 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Simpler form-making
+gem 'simple_form'
+# Devise User Authentication
+gem 'devise'
+gem 'autoprefixer-rails'
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  # Test environment
+  gem 'rspec-rails', '~> 3.5'
+  # Easier testing with factorygirl
+  gem 'factory_girl_rails'
+  # Minimalist matcher for validation BDD
+  gem 'valid_attribute'
+  # Easier syntax in testing validations (shoulda_matchers + shoulda_context)
+  gem 'shoulda'
+  # Capybara - Acceptence test framework
+  gem 'capybara'
+
+  # pry debugging
+  gem 'pry-rails'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
