@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_one :employers
+  has_one :employer
   has_one :job_seeker
 
   validates :first_name, presence: true
