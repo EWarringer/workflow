@@ -17,4 +17,7 @@ RSpec.describe User, type: :model do
     expect(user).to_not be_valid
     expect(user.errors[:password_confirmation]).to_not be_blank
   end
+
+  it { should have_one(:employer) }
+  it { should have_one(:job_seeker) }
 end
