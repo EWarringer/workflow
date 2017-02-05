@@ -57,6 +57,8 @@ group :development, :test do
 
   # pry debugging
   gem 'pry-rails'
+
+  gem 'launchy'
 end
 
 group :development do

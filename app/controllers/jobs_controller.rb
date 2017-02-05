@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  layout '_base'
+  # layout 'application'
   def index
   end
 end

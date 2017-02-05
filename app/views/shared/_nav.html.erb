@@ -48,21 +48,19 @@
                      <input type="text" value="" class="form-control" placeholder="Search...">
                 </div>
              </form>
-             <ul class="nav navbar-nav navbar-right">
+             <ul id="sessiont" class="nav navbar-nav navbar-right">
                <%- if user_signed_in? -%>
-                 <li><%= button_to 'Sign out', destroy_user_session_path, {class: "btn btn-round btn-default"}, method: :delete %></li>
+                 <li class="btn btn-round btn-default"><%= button_to 'Sign out', destroy_user_session_path, method: :delete %></li>
                <%- else -%>
                  <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-                 <li><%= button_to 'Sign In', new_user_session_path, {class: "btn btn-round btn-default"} %></li>
+                 <li class="btn btn-round btn-default"><%= button_to 'Sign In', new_user_session_path %></li>
                <%- end -%>
              </ul>
 
            </div><!-- /.navbar-collapse -->
          </div><!-- /.container-fluid -->
        </nav>
-    <div class="blurred-container">
-           <div class="img-src" style="background-image: url('<%= asset_path("gsdk/bg.jpg") %>')"></div>
-       </div>
-   </div><!--  end navbar -->
+    
+   </div>
 
 </div> <!-- end menu-dropdown -->

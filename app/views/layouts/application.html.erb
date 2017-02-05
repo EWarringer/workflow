@@ -1,15 +1,15 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Workflow</title>
+    <title>Get Shit Done Kit by Creative Tim</title>
 
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' %>
     <%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,300' %>
 
@@ -18,8 +18,8 @@
 
     <%= yield :style %>
   </head>
-
   <body data-features="<%= yield :features %>" class="<%= yield :class %>">
+
     <%= render partial: "shared/nav" %>
 
     <div class="flash-messages">
@@ -31,5 +31,6 @@
     </div>
 
     <%= yield %>
+
   </body>
-</html> -->
+</html>
