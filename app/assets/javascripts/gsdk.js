@@ -18,11 +18,11 @@
 // -----------------------------------------------------------------------------
 // Uncomment the following lines to load your custom init in here
 //
-$(document).on("page:change", function() {
-  if ($.inArray('feature1',App.features()) >= 0) {
-    Write your feature1 init script here ...
-  }
-});
+// $(document).on("page:change", function() {
+//   if ($.inArray('feature1',App.features()) >= 0) {
+//     Write your feature1 init script here ...
+//   }
+// });
 //
 // Method two:
 // -----------------------------------------------------------------------------

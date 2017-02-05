@@ -12,7 +12,7 @@ feature 'user signs in', %Q{
   scenario 'specify valid credentials' do
     user = FactoryGirl.create(:user)
     visit root_path
-    click_link 'Sign in'
+    click_button 'Sign In'
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
 
@@ -24,7 +24,7 @@ feature 'user signs in', %Q{
 
   scenario 'specify invalid credentials' do
     visit root_path
-    click_link 'Sign in'
+    click_button 'Sign In'
 
     click_button 'Sign in'
 

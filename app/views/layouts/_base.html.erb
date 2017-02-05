@@ -20,6 +20,16 @@
   </head>
   <body data-features="<%= yield :features %>" class="<%= yield :class %>">
 
+    <%= render partial: "shared/nav" %>
+
+    <div class="flash-messages">
+      <%- flash.each do |key, value| -%>
+        <div class="flash flash-<%= key %>">
+          <%= value %>
+        </div>
+      <%- end -%>
+    </div>
+
     <%= yield %>
 
   </body>

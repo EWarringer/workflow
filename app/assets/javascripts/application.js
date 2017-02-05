@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require gsdk
 //= require bootstrap
+//= require bootstrap/dropdown
 //= require bootstrap-sprockets
 //= require_tree .

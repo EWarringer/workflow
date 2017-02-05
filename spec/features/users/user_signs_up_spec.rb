@@ -13,7 +13,7 @@ feature 'user registers', %Q{
 
   scenario 'provide valid registration information' do
     visit root_path
-    click_link "Sign up"
+    click_link "Sign Up"
     fill_in 'Email', with: 'jeffsampson@example.com'
     fill_in 'First Name', with: 'Jeff'
     fill_in 'Last Name', with: 'Sampson'
@@ -27,7 +27,7 @@ feature 'user registers', %Q{
 
   scenario 'provide invalid registration information' do
     visit root_path
-    click_link 'Sign up'
+    click_link 'Sign Up'
     click_button 'Sign up'
     expect(page).to have_content('can\'t be blank')
     expect(page).to_not have_content('Sign out')
@@ -35,7 +35,7 @@ feature 'user registers', %Q{
 
   scenario 'password confirmation does not match confirmation' do
     visit root_path
-    click_link 'Sign up'
+    click_link 'Sign Up'
     fill_in 'user_password', with: 'password'
     fill_in 'Password Confirmation', with: 'password2'
 
