@@ -17,14 +17,17 @@
             <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
             <%= f.input :password_confirmation, label: 'Password Confirmation', required: true %>
           </div>
-
-          <%= render "devise/shared/links" %>
-
+          <div><%= render "devise/shared/links" %></div>
+          <div>
+            <%- if controller_name != 'sessions' %>
+            <%= link_to "Already a member? Sign in", new_session_path(resource_name) %><br />
+            <% end -%>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button style="float:left;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary form-actions"><%= f.button :submit, "Sign up" %></button>
-        </div>
+      <div class="modal-footer">
+        <button style="float:left;" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary form-actions"><%= f.button :submit, "Sign up" %></button>
+      </div>
       <% end %>
     </div>
   </div>
