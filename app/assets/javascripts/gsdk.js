@@ -1,5 +1,4 @@
 //= require gsdk/jquery-ui-1.10.4.custom.min
-//= require bootstrap3/bootstrap
 //= require gsdk/gsdk-checkbox
 //= require gsdk/gsdk-radio
 //= require gsdk/gsdk-bootstrapswitch
