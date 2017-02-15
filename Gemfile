@@ -43,6 +43,8 @@ gem 'autoprefixer-rails'
 # GetShitDone bootstrap package
 gem 'gsdk', '~> 1.0', '>= 1.0.0.4'
 
+gem 'indeed_api'
+
 group :development, :test do
   # Test environment
   gem 'rspec-rails', '~> 3.5'
