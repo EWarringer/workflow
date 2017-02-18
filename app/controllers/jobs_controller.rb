@@ -1,11 +1,11 @@
 class JobsController < ApplicationController
   # layout 'application'
   def index
-    @api = IndeedAPI
     if params[:search]
-      binding.pry
+      @search = params[:search]
+      @results = IndeedAPI.search_jobs(q: params[:search]).results
     else
-      binding.pry
+      @results = nil
     end
   end
 end

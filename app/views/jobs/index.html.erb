@@ -6,14 +6,18 @@
   <div class="main">
 
     <div class="container tim-container" style="max-width:800px;">
-      <h1 class="text-center">Job Results<small class="subtitle">Results for Ruby Developer</small></h1>
-      <%= @api.search_jobs(q: "ruby").results.each do |job| %>
-        <ul class="job_block">
-          <li><%= job.job_title %></li>
-          <li><%= job.company %></li>
-          <li><%= job.job_title %></li>
-          <li><%= job.city %></li>
-        </ul>
+      <% if @results.nil? %>
+      njxnjksanjxkas
+      <% else %>
+        <h1 class="text-center">Job Results<small class="subtitle"><%= @search %></small></h1>
+        <%= @results.each do |job| %>
+          <ul class="job_block">
+            <li><%= job.company %></li>
+            <li><%= job.formatted_location %></li>
+            <li><%= job.job_title %></li>
+            <li><%= job.city %></li>
+          </ul>
+        <% end %>
       <% end %>
     </div>
     <div class="space"></div>
