@@ -24,8 +24,12 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
           <ul class="nav navbar-nav">
+
             <li class="active"><a href="#">Link</a></li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -39,18 +43,17 @@
               </ul>
             </li>
 
-            <div class="input-group">
-              <%= form_tag(jobs_path, :method => "get", id: "search-form") do %>
-              <%= text_field_tag :search, params[:search], placeholder: "Search Posts", class: 'form-control' %>
-              <span class="input-group-btn">
-                <%= submit_tag "Search", class: 'btn btn-default' %>
-              </span>
-              <% end %>
-            </div>
+            <li><a href="javascript:void(0);" data-toggle="search" class="hidden-xs"><i class="fa fa-search"></i></a></li>
+            <form class="navbar-form navbar-left navbar-search-form" role="search">
+              <div class="form-group">
+                <%= text_field_tag :search, params[:search], placeholder: "Search Jobs...", class: 'form-control' %>
+              </div>
+            </form>
           </ul>
+
           <ul id="sessiont" class="nav navbar-nav navbar-right">
             <%- if user_signed_in? -%>
-              <li class="btn btn-round btn-default"><%= button_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+              <%= button_to 'Sign out', destroy_user_session_path, method: :delete %>
             <%- else -%>
               <li>
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalRegistration">
