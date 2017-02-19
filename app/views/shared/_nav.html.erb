@@ -53,15 +53,15 @@
 
           <ul id="sessiont" class="nav navbar-nav navbar-right">
             <%- if user_signed_in? -%>
-              <%= button_to 'Sign out', destroy_user_session_path, method: :delete %>
+              <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class: 'btn btn-primary' %>
             <%- else -%>
               <li>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalRegistration">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalRegistration">
                   Register
                 </button>
               </li>
               <li>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalSession">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalSession">
                   Sign in
                 </button>
               </li>
