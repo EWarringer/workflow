@@ -3,13 +3,12 @@
   <% else %>
     <div class="background_img">
 
-    </div>
+
 
     <div class="main background_img">
       <div class="container tim-container background_img" style="max-width:800px;">
           <h1 class="text-center">Job Results<small class="subtitle"><%= @search %></small></h1>
           <%= @results.each do |job| %>
-            <div class="container">
               <ul class="job_block">
                 <li id="job_company"><%= job.company %></li>
                 <li id="job_date"><%= job.date %></li>
@@ -21,8 +20,8 @@
                 <li id="job_source"><%= job.source %></li>
                 <li id="job_url"><%= link_to "see job", job.url %></li>
               </ul>
-            </div>
           <% end %>
       </div>
+    </div>
     </div>
   <% end %>
