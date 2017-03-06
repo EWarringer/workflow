@@ -11,23 +11,14 @@
           <%= @results.each do |job| %>
             <div class="container">
               <ul class="job_block">
-                <li><%= job.city %></li>
                 <li><%= job.company %></li>
-                <li><%= job.country %></li>
                 <li><%= job.date %></li>
                 <li><%= job.expired %></li>
                 <li><%= job.formatted_location %></li>
-                <li><%= job.formatted_location_full %></li>
                 <li><%= job.formatted_relative_time %></li>
-                <li><%= job.job_key %></li>
                 <li><%= job.job_title %></li>
-                <li><%= job.latitude %></li>
-                <li><%= job.longitude %></li>
-                <li><%= job.onmousedown %></li>
                 <li><%= job.snippet %></li>
                 <li><%= job.source %></li>
-                <li><%= job.sponsored %></li>
-                <li><%= job.state %></li>
                 <li><%= link_to "see job", job.url %></li>
               </ul>
             </div>
