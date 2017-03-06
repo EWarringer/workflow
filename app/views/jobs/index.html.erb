@@ -9,7 +9,7 @@
       <div class="container tim-container" style="max-width:800px;">
           <h1 class="text-center">Job Results<small class="subtitle"><%= @search %></small></h1>
           <%= @results.each do |job| %>
-            <div class="container job_block">
+            <div class="container">
               <ul class="job_block">
                 <li><%= job.city %></li>
                 <li><%= job.company %></li>
@@ -28,7 +28,7 @@
                 <li><%= job.source %></li>
                 <li><%= job.sponsored %></li>
                 <li><%= job.state %></li>
-                <li><%= job.url %></li>
+                <li><%= link_to "see job", job.url %></li>
               </ul>
             </div>
           <% end %>
