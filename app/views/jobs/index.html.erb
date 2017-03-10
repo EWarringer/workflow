@@ -10,18 +10,18 @@
           <h1 class="text-center">Job Results<small class="subtitle"><%= @search %></small></h1>
           <%= @results.each do |job| %>
               <ul class="job_block">
-                <div class="container">
-                  <li id="job_company"><%= job.company %></li>
-                  <br>
-                  <li id="job_date"><%= job.date %></li>
-                  <li id="job_expired"><%= job.expired %></li>
+                <div class="row">
+                  <div class="col-xs-6" id="job_company"><%= job.company %></div>
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-3" id="job_formatted_relative_time"><%= job.formatted_relative_time %></div>
+                </div>
+                  <!-- <li id="job_date"><%= job.date %></li>
+                  <li id="job_expired"><%= job.expired %></li> -->
                   <li id="job_formatted_location"><%= job.formatted_location %></li>
-                  <li id="job_formatted_relative_time"><%= job.formatted_relative_time %></li>
                   <li id="job_title"><%= job.job_title %></li>
                   <li id="job_snippet"><%= job.snippet %></li>
                   <li id="job_source"><%= job.source %></li>
                   <li id="job_url"><%= link_to "see job", job.url %></li>
-                </div>
               </ul>
           <% end %>
       </div>
