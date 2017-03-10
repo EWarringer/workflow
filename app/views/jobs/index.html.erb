@@ -4,18 +4,20 @@
 
   <% else %>
 
-    <div  class="main bg_dark">
-      <div class="container tim-container">
-        <div id="shield" class="text-center">
-          <h1>
-            <img src="http://ca.indeed.com/images/indeed-notagline.png" alt="indeed logo" style="width: 50%">
-            <br>
-            <small class="subtitle"><%= @search %></small>
-            <span class="glyphicon">&#xe114;</span>
-          </h1>
-        </div>
+    <div class="main container bg_dark">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <div class="shield">
+            <h1 class="align-middle service_area">
+              <img src="http://ca.indeed.com/images/indeed-notagline.png" alt="indeed logo" class="service_logo">
+              <small class="subtitle"><%= @search %></small>
+              <div class="glyphicon">&#xe259;</div>
+            </h1>
+          </div>
+
 
           <%= @results.each do |job| %>
+
               <ul class="job_block">
                 <div class="row">
                   <div class="col-xs-6" id="job_company"><%= job.company %></div>
@@ -30,7 +32,9 @@
                   <li id="job_source"><%= job.source %></li>
                   <li id="job_url"><%= link_to "see job", job.url %></li>
               </ul>
+
           <% end %>
+        </div>
       </div>
     </div>
   <% end %>

@@ -17,6 +17,12 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ .flash {
+   background-color: #43AC6A;
+   color: white;
+   font-size: 14pt;
+ }
+
  body, html {
      height: 100%;
      width: 100%;
@@ -26,13 +32,6 @@
    height: 100%;
    width: 100%;
  }
-
- .flash {
-   background-color: #43AC6A;
-   color: white;
-   font-size: 14pt;
- }
-
 
  .bg {
      /* The image used */
@@ -51,7 +50,7 @@
  .bg_dark {
      /* The image used */
     //  background: image-url(background);
-     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url(background);
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-url(background);
 
      /* Full height */
      height: 100%;

@@ -2,45 +2,69 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.job_block {
-  border-style: solid;
-  list-style: none;
-  padding:10px;
-  max-width:750px;
-  border-radius:5%;
-  background-color: white;
-  font-size: 20px;
+
+// JOB LISTING HEADING
+
+.shield {
+  width: 300px;
+  height: 300px;
+
+  background: -webkit-radial-gradient(circle, white 55%, #0479c4 65%, rgba(0,0,0,0) 30%);
+  background: -o-radial-gradient(circle, white 55%, #0479c4 65%, rgba(0,0,0,0) 30%);
+  background: -moz-radial-gradient(circle, white 55%, #0479c4 65%, rgba(0,0,0,0) 30%);
+  background: radial-gradient(circle, white 55%, #0479c4 65%, rgba(0,0,0,0) 30%);
+  margin: auto;
+  display: table;
+  table-layout: fixed;
 }
 
-.tim-container {
+.service_area {
+  padding-top: 60px;
+  margin: auto;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.service_logo {
+  width: 180px;
+}
+
+small.subtitle {
+  font-size: 25pt;
+  margin-bottom: 20px;
+}
+
+.glyphicon {
+  color: #444444;
+  // margin-top: 40px;
+}
+
+
+// JOB LISTINGS
+
+.main {
   margin-top: 300px;
-  max-width:800px;
   background-color: rgba(255, 255, 255, 0)
+}
+
+.job_block {
+  border-style: ridge;
+  border-color: #009bff;
+  border-width: 8px;
+  // border-radius: 5%;
+  list-style: none;
+  padding:10px;
+  background-color: white;
+  font-size: 20px;
 }
 
 #job_company {
   font-size: 30px;
   font-weight: bold;
-  color: blue;
+  color: lightblue;
 }
 
 #job_formatted_relative_time {
-  color: blue;
-}
-
-
-#shield {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: -webkit-radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
-  background: -o-radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
-  background: -moz-radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
-  background: radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
-  margin-bottom: 20px;
-  position: relative;
-  bottom: 0px;
-}
-
-.glyphicon {
-  color: #6d6d6d;
+  color: #777777;
 }
