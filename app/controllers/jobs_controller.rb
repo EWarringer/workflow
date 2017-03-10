@@ -6,6 +6,7 @@ class JobsController < ApplicationController
       @results = IndeedAPI.search_jobs(q: params[:search]).results
     else
       @results = nil
+      @backlight
     end
   end
 end

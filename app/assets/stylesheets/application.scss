@@ -22,6 +22,11 @@
      width: 100%;
  }
 
+ .main {
+   height: 100%;
+   width: 100%;
+ }
+
  .flash {
    background-color: #43AC6A;
    color: white;
@@ -29,7 +34,7 @@
  }
 
 
- .background_img {
+ .bg {
      /* The image used */
      background: image-url(background);
      /* Full height */
@@ -39,11 +44,11 @@
      /* Create the parallax scrolling effect */
      background-attachment: fixed;
      background-position: center;
-     background-repeat: no-repeat;
+     background-repeat: repeat-y;
      background-size: cover;
  }
 
- .background_img_dark {
+ .bg_dark {
      /* The image used */
     //  background: image-url(background);
      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url(background);
@@ -54,7 +59,7 @@
 
      /* Create the parallax scrolling effect */
      background-attachment: fixed;
-     background-position: center;
+     background-position: center absolute;
      background-repeat: no-repeat;
      background-size: cover;
  }
