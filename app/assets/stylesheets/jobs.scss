@@ -12,12 +12,33 @@
   font-size: 20px;
 }
 
-.tim-container {
-  margin-top: 500px;
-}
+// .tim-container {
+//   margin-top: 300px;
+// }
 
 #job_company {
   font-size: 30px;
-  font-weight: #04c475;
-  color: navy;
+  font-weight: bold;
+  color: blue;
+}
+
+#job_formatted_relative_time {
+  color: blue;
+}
+
+
+#shield {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: -webkit-radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
+  background: -o-radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
+  background: -moz-radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
+  background: radial-gradient(circle, white 50%, rgba(255,255,255,0) 50%);
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 0px;
+}
+
+.glyphicon {
+  color: #6d6d6d;
 }

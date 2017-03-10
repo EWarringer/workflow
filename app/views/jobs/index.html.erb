@@ -1,17 +1,22 @@
   <% if @results.nil? %>
-    <div class="background_img"></div>
+    <div></div>
   <% else %>
-    <div class="background_img">
+    <div   class="main background_img_dark">
 
-
-
-    <div class="main background_img">
-      <div class="container tim-container background_img" style="max-width:800px;">
-          <h1 class="text-center">Job Results<small class="subtitle"><%= @search %></small></h1>
+      <div class="container tim-container" style="max-width:800px;background-color: rgba(255, 255, 255, 0)">
+        <div id="shield">
+          <h1 class="text-center">
+            <img src="http://ca.indeed.com/images/indeed-notagline.png" alt="indeed logo" style="width: 50%">
+            <br>
+            <small class="subtitle"><%= @search %></small>
+            <span class="glyphicon">&#xe114;</span>
+          </h1>
+        </div>
           <%= @results.each do |job| %>
               <ul class="job_block">
                 <div class="row">
                   <div class="col-xs-6" id="job_company"><%= job.company %></div>
+                  <div class="col-xs-3"></div>
                   <div class="col-xs-3" id="job_formatted_relative_time"><%= job.formatted_relative_time %></div>
                 </div>
                   <!-- <li id="job_date"><%= job.date %></li>
@@ -24,6 +29,5 @@
               </ul>
           <% end %>
       </div>
-    </div>
     </div>
   <% end %>

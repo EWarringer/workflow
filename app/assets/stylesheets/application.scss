@@ -43,16 +43,18 @@
      background-size: cover;
  }
 
- .background_img_new {
+ .background_img_dark {
      /* The image used */
-     background: image-url(background);
+    //  background: image-url(background);
+     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url(background);
+
      /* Full height */
-     height: 80%;
+     height: 100%;
      width: 100%;
 
      /* Create the parallax scrolling effect */
      background-attachment: fixed;
-     background-position: fixed;
+     background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
  }

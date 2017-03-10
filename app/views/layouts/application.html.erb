@@ -18,7 +18,7 @@
 
     <%= yield :style %>
   </head>
-  <body data-features="<%= yield :features %>" class="<%= yield :class %> background_img">
+  <body data-features="<%= yield :features %>" class="<%= yield :class %>">
 
     <%= render partial: "shared/nav" unless @disable_nav %>
 
