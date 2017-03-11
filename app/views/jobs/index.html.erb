@@ -1,6 +1,20 @@
   <% if @results.nil? %>
 
-    <div class="bg"></div>
+    <div class="container bg">
+      <div style="margin-top:500px">
+        <form class="main-search" role="search">
+            <span class="fa fa-search"></span>
+            <div class="form-group left-group">
+              <%= text_field_tag :search, params[:search], placeholder: "Keyword, Title or Company", class: 'form-control' %>
+            </div>
+            <span class="fa fa-map-marker"></span>
+            <div class="form-group">
+              <%= text_field_tag :location, params[:location], placeholder: "Location", class: 'form-control' %>
+            </div>
+        </form>
+      </div>
+
+    </div>
 
   <% else %>
 

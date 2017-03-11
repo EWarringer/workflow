@@ -23,24 +23,13 @@
    font-size: 14pt;
  }
 
- body, html {
-     height: 100%;
-     width: 100%;
- }
-
- .main {
-   height: 100%;
-   width: 100%;
- }
+ body, html {height: 100%;width: 100%;}
+ .main {height: 100%;width: 100%;}
 
  .bg {
-     /* The image used */
      background: image-url(background);
-     /* Full height */
      height: 100%;
      width: 100%;
-
-     /* Create the parallax scrolling effect */
      background-attachment: fixed;
      background-position: center;
      background-repeat: repeat-y;
@@ -48,21 +37,50 @@
  }
 
  .bg_dark {
-     /* The image used */
-    //  background: image-url(background);
      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), image-url(background);
-
-     /* Full height */
      height: 100%;
      width: 100%;
-
-     /* Create the parallax scrolling effect */
      background-attachment: fixed;
      background-position: center absolute;
      background-repeat: no-repeat;
      background-size: cover;
  }
 
-.navbar-form {
-  margin-top: 21px;
+.navbar-form {margin-top:21px;}
+
+// @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.main-search {
+  margin: auto;
+  width: 850px;
+  height: 100px;
+  position: relative;
+  color: #0479c4;
+  font-size: 23pt;
+}
+.left-group {float:left;margin-right:20px}
+
+.main-search input {
+  margin:auto;
+  width: 400px;
+  height: 50px;
+  font-size: 16pt;
+
+  background: #fcfcfc;
+  border: 1px solid #0479c4;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.main-search input {text-indent:45px;}
+.main-search .fa-search {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+}
+
+.fa-map-marker {
+  position: absolute;
+  font-size:25pt;
+  top: 9px;
+  left: 450px;
 }
