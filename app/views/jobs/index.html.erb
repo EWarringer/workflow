@@ -31,7 +31,7 @@
           </div>
 
 
-          <%= @results.first do |job| %>
+          <% job = @results[0] %>
 
               <ul class="job_block">
                 <div class="row">
@@ -47,8 +47,6 @@
                   <li id="job_source"><%= job.source %></li>
                   <li id="job_url"><%= link_to "see job", job.url %></li>
               </ul>
-
-          <% end %>
         </div>
       </div>
     </div>
