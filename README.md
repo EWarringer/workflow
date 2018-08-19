@@ -1,8 +1,10 @@
 ![logo](./app/assets/images/logo.png)
 
-Working on a larger project and currently planning to implement the indeed API
-to get a stream of jobs going
+#### Screens
+![front](https://i.imgur.com/q4yFJbN.jpg)
+
+![results](https://i.imgur.com/GAhhnMY.jpg)
 
 
-#### Larger Project ER diagram of planned structure
+#### ER diagram for completed database structure
 ![ask](./app/assets/images/ER_diagram2.png)
